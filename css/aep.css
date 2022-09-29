@@ -124,7 +124,7 @@ li {
     margin-top: 50px
 }
 
-.formdescricao input {
+.formdescricao textarea {
     height: 200px;
     width: 500px;
     margin-bottom: 20px;
