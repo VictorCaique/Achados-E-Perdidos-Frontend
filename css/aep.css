@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+.sp {
+    justify-content: space-between;
+}
+
+.aep-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1vw;
+    width: 50vw;
+}
+
+.aep-info p {
+    max-width: 500px;
+}
+
+.aep-image {
+    max-width: 300px;
+    padding-bottom: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.aep-nav {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.aep-nav h2 {
+    padding-bottom: 15vh;
+}
+
+.aep-nav nav {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 50px;
+}
+
+.aep-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background-color: #DA1111;
+    border-radius: 10px;
+}
+
+.aep-nav a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    font-size: 22px;
+}
