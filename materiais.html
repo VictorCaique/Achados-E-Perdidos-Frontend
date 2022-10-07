@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="js/contraste_fonte.js"></script>
 	<script src="js/fonte.js"></script>
+	<script defer src="script.js"></script>
     <script data-ad-client="ca-pub-8511042567050353" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         addEventListener('click', (event) => {
@@ -44,13 +45,8 @@
 		  	<li class="pgacess"><a href="acessibilidade" title="Acessibilidade">Acessibilidade</a></li>
 			<li class="contraste"><a href="javascript:void(0);" id="contraste" title="Contraste Preto">Contraste Preto</a></li>
 			<li class="contraste"><a href="javascript:void(0);" id="semcontraste" title="Sem Contraste">Sem contraste</a></li>
-<<<<<<< HEAD
-			<li class="aumenta"><a href="javascript:void(0);" id="aumenta" title="Aumentar a fonte">A +</a></li>
-			<li class="diminui"><a href="javascript:void(0);" id="diminui" title="Diminuir a fonte">A -</a></li>
-=======
 			<li><button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button></li>
             <li><button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button></li>
->>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
 		  </ul>
 		  
 		</div>
@@ -148,31 +144,56 @@
 	
     <!-- ################# INICIO DO CÓDIGO DO ACHADOS E PERDIDOS FATEC ##################-->
     <main id="conteudo" class="flex-container sp-a maxh-100">
-        <section class="categorias">
-            <nav>
-                <ul>
-<<<<<<< HEAD
-                    <li><a href="#">Garrafas</a></li>
-                    <li><a href="#">Pen Drives</a></li>
-                    <li><a href="#">Materiais em geral</a></li>
-                    <li><a href="#">Eletrônicos</a></li>
-=======
-                    <li><a href="garrafas.html">Garrafas</a></li>
-                    <li><a href="pendrive.html">Pen Drives</a></li>
-                    <li><a href="materiais.html">Materiais em geral</a></li>
-                    <li><a href="eletronicos.html">Eletrônicos</a></li>
->>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
-                    <li><a href="#">Acessórios</a></li>
-                    <li><a href="#">Documentos</a></li>
-                    <li><a href="#">Carregador</a></li>
-                    <li><a href="#">Outros</a></li>
-                </ul>
-            </nav>
+        
+		<section class="itemp">
+    
+            <div id="produtos">    
+			
+			</div>
+
+            <script>
+                const items = [
+                    {
+                        id: 0,
+                        nome: 'Caderno',
+                        img: "imagem/caderno.jpg",
+                        quantidade: 0 
+                    },
+                    {
+                        id: 1,
+                        nome: 'Caneta',
+                        img: "imagem/caneta.png",
+                        quantidade: 0 
+                    },
+                    {
+                        id: 2,
+                        nome: 'Mochila',
+                        img: "imagem/mochila.webp",
+                        quantidade: 0 
+                    },
+        
+                ]
+        
+                inicializarAchados = () => {
+                    var containerProdutos = document.getElementById('produtos');
+                    items.map((val)=>{
+                        containerProdutos.innerHTML+= `
+        
+                        <div class = "produto-single">
+                            <img src="`+val.img+`"alt=`+val.nome+`>
+                            <p>`+val.nome+`</p>
+                            <li><a key="`+val.id+`" href="registro.html">Entrar em contato<a/></li>
+                        </div>
+        
+                        
+                        `;            
+                    })
+        }
+        
+                inicializarAchados();
+            </script>
         </section>
-        <form action="#" class="formdescricao">
-            <textarea name="descricao" id="desc"></textarea>
-            <button type="submit">Buscar</button>
-        </form>
+
     </main>
 
 	<footer id="rodape">
@@ -309,9 +330,8 @@ function showSlides() {
 		
 		
 	</script>
-<<<<<<< HEAD
-=======
-		<!--Aumentar e diminuit fonte -->
+
+	<!--Aumentar e diminuit fonte -->
 <script type="text/javascript">
 	window.onload = function() {
 		var elementBody = document.querySelector('body');
@@ -335,6 +355,6 @@ function showSlides() {
 		});
 	}
 </script>
->>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
+
 </body>
 </html>

@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="js/contraste_fonte.js"></script>
 	<script src="js/fonte.js"></script>
+	<script defer src="script.js"></script>
     <script data-ad-client="ca-pub-8511042567050353" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         addEventListener('click', (event) => {
@@ -44,13 +45,8 @@
 		  	<li class="pgacess"><a href="acessibilidade" title="Acessibilidade">Acessibilidade</a></li>
 			<li class="contraste"><a href="javascript:void(0);" id="contraste" title="Contraste Preto">Contraste Preto</a></li>
 			<li class="contraste"><a href="javascript:void(0);" id="semcontraste" title="Sem Contraste">Sem contraste</a></li>
-<<<<<<< HEAD
-			<li class="aumenta"><a href="javascript:void(0);" id="aumenta" title="Aumentar a fonte">A +</a></li>
-			<li class="diminui"><a href="javascript:void(0);" id="diminui" title="Diminuir a fonte">A -</a></li>
-=======
 			<li><button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button></li>
             <li><button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button></li>
->>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
 		  </ul>
 		  
 		</div>
@@ -147,32 +143,65 @@
 	</header>
 	
     <!-- ################# INICIO DO CÓDIGO DO ACHADOS E PERDIDOS FATEC ##################-->
+
+
+        <!-- ################# FORMULÁRIO FINAL ##################-->
     <main id="conteudo" class="flex-container sp-a maxh-100">
-        <section class="categorias">
-            <nav>
+    
+    <section class="categoria">
+        <form action="/pagina-processa-dados-do-form" method="post">
+
+                <form method="post" action=""> 
+                   
+                  <ul> 
+                    <label for="nome_cad" class="cad">Seu nome:</label>
+                    <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="seu nome"/>
+                  </ul>
+                   
+                  <ul> 
+                    <label for="email_cad" class="cad">E-mail:</label>
+                    <input id="email_cad" name="email_cad" required="required" type="email" placeholder="seu e-mail"/> 
+                  </ul>
+                   
+                  <ul> 
+                    <label for="tel_cad" class="cad">Telefone:</label>
+                    <input id="tel_cad" name="tel_cad" required="required" type="telefone" placeholder="(xx) xxxxx-xxxx"/> 
+                  </ul>
+
+                  <ul>
+					<label for="mensagem" class="required">Mensagem</label>
+					<br>
+					<textarea name="mensagem" id="mensagem" cols="40" rows="10" required=""></textarea>
+                  </ul>
+
+                </form>
+                </element>
+
+            <div class="button">
                 <ul>
-<<<<<<< HEAD
-                    <li><a href="#">Garrafas</a></li>
-                    <li><a href="#">Pen Drives</a></li>
-                    <li><a href="#">Materiais em geral</a></li>
-                    <li><a href="#">Eletrônicos</a></li>
-=======
-                    <li><a href="garrafas.html">Garrafas</a></li>
-                    <li><a href="pendrive.html">Pen Drives</a></li>
-                    <li><a href="materiais.html">Materiais em geral</a></li>
-                    <li><a href="eletronicos.html">Eletrônicos</a></li>
->>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
-                    <li><a href="#">Acessórios</a></li>
-                    <li><a href="#">Documentos</a></li>
-                    <li><a href="#">Carregador</a></li>
-                    <li><a href="#">Outros</a></li>
+                    <li><a href="#">Enviar</a></li>
                 </ul>
-            </nav>
-        </section>
-        <form action="#" class="formdescricao">
-            <textarea name="descricao" id="desc"></textarea>
-            <button type="submit">Buscar</button>
-        </form>
+            </div>
+
+            </form>
+        </div>
+</section>
+<hr>
+
+<!-- Itens selecionados -->
+
+<section class="aep-nav">
+    <h2>Itens escolhidos:</h2>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</section>
+
+    <!-- ################# FORMULÁRIO FINAL ##################-->
+
+
     </main>
 
 	<footer id="rodape">
@@ -309,9 +338,8 @@ function showSlides() {
 		
 		
 	</script>
-<<<<<<< HEAD
-=======
-		<!--Aumentar e diminuit fonte -->
+
+	<!--Aumentar e diminuit fonte -->
 <script type="text/javascript">
 	window.onload = function() {
 		var elementBody = document.querySelector('body');
@@ -335,6 +363,6 @@ function showSlides() {
 		});
 	}
 </script>
->>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
+
 </body>
 </html>

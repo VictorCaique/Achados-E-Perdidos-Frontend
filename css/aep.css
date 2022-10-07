@@ -43,7 +43,12 @@ li {
 }
 
 .aep-nav {
+<<<<<<< HEAD
     width: 30%;
+=======
+    display: inline-block;
+    width: 50%;
+>>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,10 +56,17 @@ li {
 }
 
 .aep-nav h2 {
+<<<<<<< HEAD
     padding-bottom: 10vh;
 }
 
 .aep-nav ul {
+=======
+    padding-bottom: 15vh;
+}
+
+.aep-nav nav {
+>>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
     width: 400px;
     display: flex;
     justify-content: center;
@@ -144,5 +156,122 @@ li {
 }
 
 .formdescricao button:hover {
+<<<<<<< HEAD
     background-color: #DA1111;
 }
+=======
+    background-color: #da1111;
+}
+
+/* CATEGORIA */
+
+label.cad {
+    text-align:inherit;
+    display: inline-block;
+    width: 150px;
+}
+
+label.mensa {
+    text-align:inherit;
+    display: inline-block;
+    width: 150px;
+}
+
+.categoria {
+    flex-flow: row wrap;
+    padding:10px;
+    
+}
+
+.categorias ul {
+    width: 400px;
+    height: 75vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.categoria li {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 30px;
+    background-color: #DA1111;
+    border-radius: 10px;
+}
+
+.categoria li:hover {
+    background-color: #DA1111;
+}
+
+.categoria a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    font-size: 17px;
+}
+
+/* FORMULÁRIO */
+
+        .produto-single ul {
+            width: 400px;
+            height: 75vh;
+            white-space: nowrap;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+         #produtos{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: flex;
+        }
+
+        .produto-single{
+            width: 66.3%;
+            padding: 0 20px;
+            border: 0.5px solid #ccc;
+            margin: 20px 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .produto-single img{
+            max-width: 100%;
+        }
+
+        .produto-single p {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .produto-single li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 40px;
+            margin-bottom: 20px;
+            background-color: #DA1111;
+            border-radius: 10px;
+        }
+        
+        .produto-single li:hover {
+            background-color: #DA1111;
+        }
+
+        .produto-single a {
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            color: #FFF;
+            font-size: 17px;
+        }
+
+        @media screen and (max-width: 768px){
+            .produto-single{
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+>>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1

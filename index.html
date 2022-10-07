@@ -10,6 +10,10 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="js/contraste_fonte.js"></script>
 	<script src="js/fonte.js"></script>
+<<<<<<< HEAD
+=======
+	<script defer src="script.js"></script>
+>>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
     <script data-ad-client="ca-pub-8511042567050353" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         addEventListener('click', (event) => {
@@ -44,8 +48,13 @@
 		  	<li class="pgacess"><a href="acessibilidade" title="Acessibilidade">Acessibilidade</a></li>
 			<li class="contraste"><a href="javascript:void(0);" id="contraste" title="Contraste Preto">Contraste Preto</a></li>
 			<li class="contraste"><a href="javascript:void(0);" id="semcontraste" title="Sem Contraste">Sem contraste</a></li>
+<<<<<<< HEAD
 			<li class="aumenta"><a href="javascript:void(0);" id="aumenta" title="Aumentar a fonte">A +</a></li>
 			<li class="diminui"><a href="javascript:void(0);" id="diminui" title="Diminuir a fonte">A -</a></li>
+=======
+			<li><button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button></li>
+            <li><button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button></li>
+>>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
 		  </ul>
 		  
 		</div>
@@ -155,8 +164,14 @@
             <h2>Acesse aqui:</h2>
             <nav>
                 <ul>
+<<<<<<< HEAD
                     <li><a href="/category.html">Items Encontrados</a></li>
                     <li><a href="">Entre em Contato</a></li>
+=======
+                    <li><a href="category.html">Itens Encontrados</a></li>
+				</br>
+                    <li><a href="registro.html">Entre em Contato</a></li>
+>>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
                 </ul>
             </nav>
         </section>
@@ -296,5 +311,32 @@ function showSlides() {
 		
 		
 	</script>
+<<<<<<< HEAD
+=======
+<!--Aumentar e diminuit fonte -->
+<script type="text/javascript">
+	window.onload = function() {
+		var elementBody = document.querySelector('body');
+		var elementBtnIncreaseFont = document.getElementById('increase-font');
+		var elementBtnDecreaseFont = document.getElementById('decrease-font');
+		// Padrão de tamanho, equivale a 100% do valor definido no Body
+		var fontSize = 100;
+		// Valor de incremento ou decremento, equivale a 10% do valor do Body
+		var increaseDecrease = 10;
+
+		// Evento de click para aumentar a fonte
+		elementBtnIncreaseFont.addEventListener('click', function(event) {
+			fontSize = fontSize + increaseDecrease;
+			elementBody.style.fontSize = fontSize + '%';
+		});
+
+		// Evento de click para diminuir a fonte
+		elementBtnDecreaseFont.addEventListener('click', function(event) {
+			fontSize = fontSize - increaseDecrease;
+			elementBody.style.fontSize = fontSize + '%';
+		});
+	}
+</script>
+>>>>>>> 3119bbd910eb1472abd685b888ef669b009337b1
 </body>
 </html>
