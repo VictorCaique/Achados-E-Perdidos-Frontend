@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="js/contraste_fonte.js"></script>
 	<script src="js/fonte.js"></script>
+	<script defer src="script.js"></script>
     <script data-ad-client="ca-pub-8511042567050353" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         addEventListener('click', (event) => {
@@ -143,24 +144,56 @@
 	
     <!-- ################# INICIO DO CÓDIGO DO ACHADOS E PERDIDOS FATEC ##################-->
     <main id="conteudo" class="flex-container sp-a maxh-100">
-        <section class="categorias">
-            <nav>
-                <ul>
-                    <li><a href="garrafas.html">Garrafas</a></li>
-                    <li><a href="pendrive.html">Pen Drives</a></li>
-                    <li><a href="materiais.html">Materiais em geral</a></li>
-                    <li><a href="eletronicos.html">Eletrônicos</a></li>
-                    <li><a href="#">Acessórios</a></li>
-                    <li><a href="#">Documentos</a></li>
-                    <li><a href="#">Carregador</a></li>
-                    <li><a href="#">Outros</a></li>
-                </ul>
-            </nav>
+        
+		<section class="itemp">
+    
+            <div id="produtos">    
+			
+			</div>
+
+            <script>
+                const items = [
+                    {
+                        id: 0,
+                        nome: 'pendrive 16GB SanDisk',
+                        img: "imagem/pendrive32.jpg",
+                        quantidade: 0 
+                    },
+                    {
+                        id: 1,
+                        nome: 'pendrive 8GB',
+                        img: "imagem/pendrive32.jpg",
+                        quantidade: 0 
+                    },
+                    {
+                        id: 2,
+                        nome: 'pendrive 32GB',
+                        img: "imagem/pendrive32.jpg",
+                        quantidade: 0 
+                    },
+        
+                ]
+        
+                inicializarAchados = () => {
+                    var containerProdutos = document.getElementById('produtos');
+                    items.map((val)=>{
+                        containerProdutos.innerHTML+= `
+        
+                        <div class = "produto-single">
+							<img src="`+val.img+`"alt=`+val.nome+`"/>
+                            <p>`+val.nome+`</p>
+                            <li><a key="`+val.id+`" href="registro.html">Entrar em contato<a/></li>
+                        </div>
+        
+                        
+                        `;            
+                    })
+        }
+        
+                inicializarAchados();
+            </script>
         </section>
-        <form action="#" class="formdescricao">
-            <textarea name="descricao" id="desc"></textarea>
-            <button type="submit">Buscar</button>
-        </form>
+
     </main>
 
 	<footer id="rodape">
@@ -297,7 +330,8 @@ function showSlides() {
 		
 		
 	</script>
-		<!--Aumentar e diminuit fonte -->
+
+	<!--Aumentar e diminuit fonte -->
 <script type="text/javascript">
 	window.onload = function() {
 		var elementBody = document.querySelector('body');
@@ -321,5 +355,6 @@ function showSlides() {
 		});
 	}
 </script>
+
 </body>
 </html>
