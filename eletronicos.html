@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Achados e Perdidos</title>
+    <link rel="stylesheet" href="css/site_fatec.css" type="text/css">
+    <link rel="stylesheet" href="css/aep.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/contraste_fonte.js"></script>
+	<script src="js/fonte.js"></script>
+	<script defer src="script.js"></script>
+    <script data-ad-client="ca-pub-8511042567050353" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        addEventListener('click', (event) => {
+  if (event.target.id === 'next') {
+    document.getElementById('scrollHor').scrollBy(500, 0);
+  };
+  if (event.target.id === 'back') {
+    document.getElementById('scrollHor').scrollBy(-500, 0);
+  };
+})
+    
+    </script>
+    <script>
+        addEventListener('click', (event) => {
+  if (event.target.id === 'next1') {
+    document.getElementById('scrollHor1').scrollBy(500, 0);
+  };
+  if (event.target.id === 'back1') {
+    document.getElementById('scrollHor1').scrollBy(-500, 0);
+  };
+})
+    
+    </script>
+</head>
+<body>
+    <header>
+	  <div class="acessibilidade">
+		<ul class="atalhos">
+			<li><a href="#conteudo" accesskey="1" title="Ir diretamente ao conteúdo do site">Ir para o conteúdo [1]</a></li>
+			<li><a href="#menu" accesskey="2" title="Ir diretamente ao menu do site">Ir para o menu [2]</a></li>
+			<li><a href="#rodape" accesskey="3" title="Ir diretamente ao rodapé do site">Ir para o rodapé [3]</a></li>
+		  	<li class="pgacess"><a href="acessibilidade" title="Acessibilidade">Acessibilidade</a></li>
+			<li class="contraste"><a href="javascript:void(0);" id="contraste" title="Contraste Preto">Contraste Preto</a></li>
+			<li class="contraste"><a href="javascript:void(0);" id="semcontraste" title="Sem Contraste">Sem contraste</a></li>
+			<li><button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button></li>
+            <li><button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button></li>
+		  </ul>
+		  
+		</div>
+		<div class="topo">
+			<a href="http://www.fateczl.edu.br"><img src="imagem/20_branco_update.png" alt="Logo Fatec Zona Leste branco" title="Fatec Zona Leste" class="logo-img"></a>
+			<a href="http://www.cps.sp.gov.br" target="_blank"><img src="imagem/logo-eleitoral.png" alt="logo Centro Paula Souza branco" class="logo-cps" title="Centro Paula Souza"></a>
+		</div>
+		<div id="menu">
+			<nav class="menubar">
+			<ul class="menu" id="myTopnav" role="menubar">
+			<li role="menuitem" aria-haspopup="false"><a href="http://www.fateczl.edu.br" tabindex="0">Início</a></li>
+			<li role="menuitem" class="link" aria-haspopup="true"><a href="#" tabindex="0">Institucional</a>
+				<ul>
+					<li role="menuitem" aria-haspopup="false" aria-expanded="false" aria-hidden="true"><a href="sobre" tabindex="0">A Fatec Zona Leste</a></li>
+					<li role="menuitem" aria-haspopup="false" ><a href="local" tabindex="0">Localização</a></li>
+					<li role="menuitem" aria-haspopup="false"><a href="congregacao" tabindex="0">Congregação</a></li>
+					<li role="menuitem" aria-haspopup="false"><a href="cpa" tabindex="0">CPA</a></li>
+	
+				</ul>
+			</li>
+				<li role="menuitem" class="link" aria-haspopup="true"><a href="#">Biblioteca</a>
+					<ul>
+					    <li role="menuitem" aria-haspopup="true"><a href="apoio_pesquisa">Apoio à pesquisa</a></li>
+						
+						<li role="menuitem" aria-haspopup="true"><a href="https://heavier-than-air-pu.000webhostapp.com/opac/index.php" target="_blank">Consultar Acervo</a></li>
+						<li role="menuitem" aria-haspopup="true"><a href="biblio">Informações</a></li>
+						<li role="menuitem" aria-haspopup="true"><a href="periodicos_gestao">Periódicos Científicos - Gestão Empresarial</a></li>
+						<li role="menuitem" aria-haspopup="true"><a href="periodicos_logistica">Periódicos Científicos - Logística</a></li>
+                        <li role="menuitem" aria-haspopup="true"><a href="periodicos_polimeros">Periódicos Científicos - Polímeros</a></li>
+                        <li role="menuitem" aria-haspopup="true"><a href="tcc">TCC Online</a></li>
+                                        
+					</ul>
+				</li>
+				<li role="menuitem" class="link" aria-haspopup="true"><a href="#">Secretaria</a>
+					<ul>
+						<li role="menuitem" aria-haspopup="true" aria-hidden="true"><a href="secretaria">Informações</a></li>
+						<li role="menuitem" aria-haspopup="true" aria-hidden="true"><a href="solicitacao_documentos">Solicitações de documentos e requerimentos</a></li>
+					</ul>
+				</li>
+				<li role="menuitem" class="link" aria-haspopup="true"><a href="#">Cursos</a>
+					<ul>
+						<li role="menuitem" aria-haspopup="false"><a href="ads">Análise e Desenvolvimento de Sistemas</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="comex">Comércio Exterior</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="plasticos">Desenvolvimento de Produtos Plásticos</a></li>
+							<li role="menuitem" aria-haspopup="false"><a href="dsmp">Desenvolvimento de Software Multiplataforma</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="rh">Gestão de Recursos Humanos</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="gestao">Gestão Empresarial</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="gestaoead">Gestão Empresarial EAD</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="logistica">Logística</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="polimeros">Polímeros</a></li>
+						
+					</ul>
+				</li>
+				<li role="menuitem" class="link" aria-haspopup="true"><a href="#">Área do Aluno</a>
+					<ul>
+						<li role="menuitem" aria-haspopup="false"><a href="http://atleticazonaleste.wixsite.com/atleticafateczl" target="_blank">Atlética</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="calendario">Calendário Acadêmico</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="da">Diretório Acadêmico</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="estagio">Estágio</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="newsletter">Newsletter</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="https://siga.cps.sp.gov.br/aluno/login.aspx" target="_blank">SIGA</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="transferencia">Transferência</a></li>
+					</ul>
+				</li>
+				<li role="menuitem" class="link" aria-haspopup="false"><a href="http://www.eadfatec.cps.sp.gov.br/" target="_blank">EAD</a></li>
+				<li role="menuitem" class="link" aria-haspopup="true"><a href="#">Professores</a>
+					<ul>
+						<li role="menuitem" aria-haspopup="false"><a href="https://www.urhsistemas.cps.sp.gov.br/dgsdad/selecaopublica/" target="_blank">Concursos</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="professores">Currículo Lattes</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="http://reserva.fateczl.edu.br" target="_blank">Reservar Laboratório</a></li>
+						<li role="menuitem" aria-haspopup="false"><a href="https://siga.cps.sp.gov.br/fatec/login.aspx" target="_blank">SIGA</a></li>
+					</ul>
+				</li>
+				<li role="menuitem" class="link" aria-haspopup="false"><a href="vestibular">Vestibular</a></li>
+				<li role="menuitem" class="link" aria-haspopup="true"><a href="http://fatec.sp.gov.br/">E-Mail Institucional-Microsoft</a></li>
+				<li role="menuitem" class="link" aria-haspopup="false"><a href="http://suporte.fateczl.edu.br/">Suporte DTI</a></li>
+				<li role="menuitem" class="link" aria-haspopup="false"><a href="contato">Fale conosco</a></li>
+				<li role="menuitem" class="link" aria-haspopup="true"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars"></i>
+					</a></li>
+			</ul>
+			</nav>
+		</div>
+		  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+	</header>
+	
+    <!-- ################# INICIO DO CÓDIGO DO ACHADOS E PERDIDOS FATEC ##################-->
+    <main id="conteudo" class="flex-container sp-a maxh-100">
+        
+		<section class="itemp">
+    
+            <div id="produtos">    
+          
+            <script>
+                const items = [
+                    {
+                        id: 0,
+                        nome: 'Celular Motorola',
+                        img: "imagem/celular.webp",
+                        quantidade: 0 
+                    },
+                    {
+                        id: 1,
+                        nome: 'Notebook Legion i5',
+                        img: "imagem/not.webp",
+                        quantidade: 0 
+                    },
+					{
+                        id: 2,
+                        nome: 'Notebook Legion i7',
+                        img: "imagem/not.webp",
+                        quantidade: 0 
+                    },
+        
+                ]
+        
+                inicializarAchados = () => {
+                    var containerProdutos = document.getElementById('produtos');
+                    items.map((val)=>{
+                        containerProdutos.innerHTML+= `
+        
+                        <div class = "produto-single">
+                            <img src="`+val.img+`"alt=`+val.nome+`"/>
+                            <p>`+val.nome+`</p>
+                            <li><a key="`+val.id+`" href="registro.html">Entrar em contato<a/></li>
+                        </div>
+        
+                        
+                        `;            
+                    })
+        }
+        
+                inicializarAchados();
+        
+            </script>
+        </section>
+
+    </main>
+
+	<footer id="rodape">
+		<section id="mapa">
+			
+			<h4>Mapa do Site</h4>
+		<ul class="map">
+			
+			<li>Institucional
+				<ul>
+					<li><a href="sobre">A Fatec Zona Leste</a></li>
+					<li><a href="local">Localização</a></li>
+					<li><a href="congregacao">Congregação</a></li>
+					<li><a href="cpa">CPA</a></li>
+	
+				</ul>
+			</li>
+				<li>Biblioteca
+					<ul>
+					    <li><a href="apoio_pesquisa">Apoio à pesquisa</a></li>
+						
+						<li><a href="https://heavier-than-air-pu.000webhostapp.com/opac/index.php" target="_blank">Consultar Acervo</a></li>
+						<li><a href="biblio.html">Informações</a></li>
+						<li><a href="periodicos_gestao">Periódicos Científicos - Gestão Empresarial</a></li>
+						<li><a href="periodicos_logistica">Periódicos Científicos - Logística</a></li>
+                                                <li><a href="periodicos_polimeros">Periódicos Científicos - Polímeros</a></li>
+                                        <li><a href="tcc">TCC Online</a></li>
+					</ul>
+				</li>
+				<li><a href="secretaria">Secretaria</a></li>
+				<li>Cursos
+					<ul>
+						<li><a href="ads">Análise e Desenvolvimento de Sistemas</a></li>
+						<li><a href="comex">Comércio Exterior</a></li>
+						<li><a href="plasticos">Desenvolvimento de Produtos Plásticos</a></li>
+						<li><a href="dsmp">Desenvolvimento de Software Multiplataforma</a></li>
+						<li><a href="rh">Gestão de Recursos Humanos</a></li>
+						<li><a href="gestao">Gestão Empresarial</a></li>
+						<li><a href="logistica">Logística</a></li>
+						<li><a href="polimeros">Polímeros</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="map">
+				<li>Área do Aluno
+					<ul>
+						<li><a href="http://atleticazonaleste.wixsite.com/atleticafateczl" target="_blank">Atlética</a></li>
+						<li><a href="calendario">Calendário Acadêmico</a></li>
+						<li><a href="da">Diretório Acadêmico</a></li>
+						<li><a href="estagio">Estágio</a></li>
+						<li><a href="newsletter">Newsletter</a></li>
+						<li><a href="https://siga.cps.sp.gov.br/aluno/login.aspx" target="_blank">SIGA</a></li>
+						<li><a href="transferencia">Transferência</a></li>
+					</ul>
+				</li>
+				
+				<li>Professores
+					<ul>
+						<li><a href="https://www.urhsistemas.cps.sp.gov.br/dgsdad/selecaopublica/" target="_blank">Concursos</a></li>
+						<li><a href="professores">Currículo Lattes</a></li>
+						<li><a href="http://reserva.fateczl.edu.br">Reservar Laboratório</a></li>
+						<li><a href="https://siga.cps.sp.gov.br/fatec/login.aspx" target="_blank">SIGA</a></li>
+					</ul>
+				</li>
+				<li><a href="vestibular">Vestibular</a></li>
+				<li><a href="http://fatec.sp.gov.br/view/Default.aspx">E-Mail Institucional-Microsoft</a></li>
+				
+			</ul>
+		</section>
+		<section id="informacoes">
+			<h4>Informações</h4>
+			<ul class="info">
+				<li>Faculdade de Tecnologia da Zona Leste</li>
+			</ul>
+			<ul class="info">
+			<li><img src="imagem/location.png" alt="endereço"></li><li>Avenida Águia de Haia, 2983. Cidade A.E. Carvalho, CEP 03694-000, São Paulo-SP.</li>
+				</ul>
+			<ul class="info">
+				<li><img src="imagem/telefone.png" alt="telefone"></li><li>(11) 2049-2600 (11) 2026-0378 (11) 2026-1303 (11) 2041-2187</li>
+			</ul>
+			<ul class="info">
+				<li><img src="imagem/mail.png" alt="fale conosco"></li><li><a href="contato">Fale Conosco</a></li>
+			</ul>
+			<ul class="info">
+				<li><img src="imagem/dti.png" alt="Suporte DTI"></li><li><a href="http://suporte.fateczl.edu.br/">Suporte DTI</a></li>
+			</ul><br>
+			<h4>Redes Sociais</h4>
+			<ul class="social">
+				<li><a href="https://www.facebook.com/fateczl.oficial/"><img class="imgsocial" src="imagem/facebook.png" alt="Facebook" title="Facebook"></a></li> 
+                <li><a href="https://www.instagram.com/fateczl.oficial/"><img class="imgsocial" src="imagem/instagram.png" alt="Instagram" title="Instagram"></a></li>
+                <li><a href="https://twitter.com/Fateczl_oficial"><img class="imgsocial" src="imagem/twitter.png" alt="Twitter" title="Twitter"></a></li>
+                <li><a href="https://www.youtube.com/fateczleste"><img class="imgsocial" src="imagem/youtube.png" alt="YouTube" title="YouTube"></a> <a href="https://www.linkedin.com/company/faculdade-de-tecnologia-zona-leste-fatec-zl" title="LinkedIn"><img class="imgsocial" src="imagem/linkedin.png" alt="Linkedin"></a></li>
+			</ul>
+			<ul class="info">
+				<li>Desenvolvido por Edson Junior. Apoio: Bruno Defante, Vinício Lima, Fernanda de Lima e Lisandra Santana &copy; 2021</li>
+				
+			</ul>
+		</section>
+	</footer>
+    <script>
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+    </script>
+    <script>
+		function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+}
+    </script>
+	<!-- NAVEGAÇÃO NO MENU ATRAVÉS DO TAB-->
+	<script>
+		var filho;
+		$(".link").focusin(function(){
+			$(filho).css("display", "none");
+			filho = this.children[1];
+			$(filho).css("display", "block");			
+		});	
+		
+		
+	</script>
+	<!--Aumentar e diminuit fonte -->
+<script type="text/javascript">
+	window.onload = function() {
+		var elementBody = document.querySelector('body');
+		var elementBtnIncreaseFont = document.getElementById('increase-font');
+		var elementBtnDecreaseFont = document.getElementById('decrease-font');
+		// Padrão de tamanho, equivale a 100% do valor definido no Body
+		var fontSize = 100;
+		// Valor de incremento ou decremento, equivale a 10% do valor do Body
+		var increaseDecrease = 10;
+
+		// Evento de click para aumentar a fonte
+		elementBtnIncreaseFont.addEventListener('click', function(event) {
+			fontSize = fontSize + increaseDecrease;
+			elementBody.style.fontSize = fontSize + '%';
+		});
+
+		// Evento de click para diminuir a fonte
+		elementBtnDecreaseFont.addEventListener('click', function(event) {
+			fontSize = fontSize - increaseDecrease;
+			elementBody.style.fontSize = fontSize + '%';
+		});
+	}
+</script>
+</body>
+</html>
